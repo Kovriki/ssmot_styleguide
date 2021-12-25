@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <style media="screen">
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      font-family: "Fugue", serif;
+    }
+
+
+        nav{
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          font-size: 2em;
+          margin-top: 3em;
+          margin-left: 1em;
+        }
+        nav a{
+          color: #1D1E1B;
+          text-decoration: none;
+
+        }
+        nav a:hover{
+          color: #C7DEAE;
+        }
+        .main {
+          width: 100vw;
+          /* margin-left: 20vw; */
+          padding-top: 5em;
+          padding-left: 25em;
+          padding-right: 5em;
+          background-color: #C7DEAE;
+      }
+        .m_1 {
+          background-color: #B0C4EA;
+        }
+        .m_2 {
+          background-color: #C1B8E1;
+        }
+
+
+        .promo{
+          width: 100vw;
+          height: 100vh;
+          background-color: #1D1E1B;
+          /* display: flex;
+          align-items: center;
+          justify-content: center; */
+          }
+        .promo nav a{
+          color: white;
+        }
+        .st{
+          font-size: 2em;
+          color: white;
+          position: absolute;
+          margin-top: 1em;
+          margin-left: 1em;
+        }
+
+        .logo_w {
+          width: 530px;
+          height: 210px;
+          background-image: url("images/logo_w.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: relative;
+          margin: auto;
+        }
+        .logo {
+          width: 230px;
+          height: 110px;
+          background-image: url("images/logo.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: relative;
+          /* margin: auto; */
+          margin-top: 3em;
+        }
+
+        .logo_a{
+          width: 630px;
+          height: 410px;
+          background-image: url("images/logo_a.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: relative;
+          /* margin: auto; */
+          /* margin-top: 3em; */
+        }
+        .first{
+          /* background-color: #C7DEAE; */
+          /* width: 80vw; */
+        }
+        h1{
+          font-size: 8em;
+          margin-top: 1em;
+        }
+        h2{
+          font-size: 6em;
+          margin-top: 1em;
+          max-width: 600px;
+
+        }
+        h3{
+          font-size: 3em;
+          max-width: 600px;
+
+        }
+        p {
+          font-size: 2em;
+          margin-top: 1em;
+          max-width: 600px;
+        }
+        hr{
+          border: none;
+          height:  3px;
+          /* width: 90%; */
+          background-color:  #1D1E1B;
+          margin: 6em auto;
+        }
+        .logo_box {
+          display: flex;
+          flex-direction: row;
+          gap:1em;
+          margin-top: 1em;
+          /* flex-wrap: nowrap; */
+        }
+        .logo_safe_1{
+          width: 530px;
+          height: 210px;
+          background-image: url("images/logo_safe_1.svg");
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .logo_safe_2{
+          width: 530px;
+          height: 110px;
+          background-image: url("images/logo_safe_2.svg");
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .logo_safe_3{
+          width: 330px;
+          height: 100px;
+          background-image: url("images/logo_safe_3.svg");
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .collab_1 {
+          width: 730px;
+          height: 200px;
+          background-image: url("images/collab_1.png");
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-top: 2em;
+        }
+        .collab_2 {
+          width: 730px;
+          height: 200px;
+          background-image: url("images/collab_2.png");
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .d_type01 {
+          width: 350px;
+          height: 100px;
+          background-image: url("images/d_type02.svg");
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-top: 2em;
+        }
+        .d_type02 {
+          width: 910px;
+          height: 100px;
+          background-image: url("images/d_type01.svg");
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-top: 2em;
+
+          /* background-size: 100%; */
+        }
+        .logo_mist {
+          background-image: url("images/logo_mist.svg");
+          width: 910px;
+          height: 500px;
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-top: 2em;
+        }
+        .logo_mist_2 {
+          background-image: url("images/logo_mist_2.png");
+          width: 910px;
+          height: 500px;
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-top: 2em;
+        }
+        .abc {
+          max-width: 500px;
+        }
+        .color_box {
+          display: flex;
+          flex-direction: row;
+          gap: 3em;
+        }
+        .color_1{          background-image: url("images/color_1.svg");
+                  width: 300px;
+                  height: 200px;
+                  background-position: top;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  margin-top: 2em;}
+        .color_2{          background-image: url("images/color_2.svg");
+                  width: 300px;
+                  height: 200px;
+                  background-position: top;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  margin-top: 2em;}
+        .palitra {
+                    background-image: url("images/palitra.png");
+                    width: 910px;
+                    height: 500px;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-top: 3em;
+              }
+              .black{
+                width: 950px;
+                height: 600px;
+                border-radius: 30px;
+                background-color: #1D1D1B'
+              }
+              .birky{
+
+              }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#s1">Бренд</a>
+      <a href="#s2">Айдентика</a>
+      <a href="#s3">Логотип</a>
+      <a href="#s4">Типографика</a>
+      <a href="#s5">Цвет</a>
+      <a href="#s6">Графика</a>
+      <a href="#s7">Сетка</a>
+      <a href="#s8">Использование</a>
+
+    </nav>
+    <p class="st">Стайлгайд</p>
+
+    <div class="promo">
+        <div class="logo_w">
+
+        </div>
+    </div>
+
+    <div class="main">
+
+      <div class="first" id="s1">
+          <h1>Бренд</h1>
+          <h3>творческий
+            активный
+            нестандартный
+            уверенный
+            толерантный
+            рассудительный  </h3>
+          <h2>Ценности</h2>
+          <p>Мы ставим на первое место идеи андеграунда. Он противопоставляется массовой культуре и мейнстриму, массмаркету и fast-fashion.</p>
+          <p>Открыты всему новому. мы ценим время своих пользователей, поэтому подбираем близлежащие места к ним.</p>
+          <p>Уникальность — это не роскошь, модный и необычный образ по карману любому.</p>
+          <p>Продвигаем культуру вторичного потребления.</p>
+          <h2>Миссия</h2>
+          <p>Поддерживать пользователей в их поиске своей идентичности, вдохновлять на создание нового</p>
+
+          <!-- <hr> -->
+        </div>
+      </div>
+
+      <div class="main m_1">
+
+        <div class="second" id="s2">
+            <h1>Айдентика</h1>
+            <h2>Характер</h2>
+            <p>В логотипе откражен дух нашего бренда. Мы объединяем людей и отражаем их индивидуальность, которая складывается из малейших деталей.</p>
+            <div class="logo"></div>
+            <h2>Смыслы</h2>
+            <p>Логотип состоит из разных глифов: цифры, буквы, знаки. Также присутсвует 2 размера шрифта. Всё это говорит о толлерантности.</p>
+            <p>Квадратные скобки объединяют разные знаки  вместе, создавая монолит. Острые углы, наборный шрифт и отсутствие наклона у букв говорят о нашей уверенности и рассудительности.</p>
+            <h2>Построение логотипа</h2>
+            <div class="logo_a"></div>
+            <h1 id="s3">Логотип</h1>
+            <div class="logo"></div>
+            <p>Логотип может использоваться набумажной продукции, на мерче и в вебе.  Минимальный размер логотипа 40 pt.</p>
+            <p>Сокращенные варианты используются в случаях, если ширина основного логотипа не позволяет выполнить правила минимального размера и сохранить отступы.</p>
+            <div class="logo_box">
+              <div class="logo_safe_1"></div>
+              <div class="logo_safe_2"></div>
+              <div class="logo_safe_3"></div>
+            </div>
+            <h2>Коллаборации</h2>
+            <!-- <div class="collab_box">
+
+            </div> -->
+            <div class="collab_1"></div>
+            <div class="collab_2"></div>
+            <h2>Дополнительная типографика</h2>
+            <div class="d_type01"></div>
+            <div class="d_type02"></div>
+            <p>Дополнительная типографика используется в роли дополнения и украшения. Она несёт больше декоративную составляющую, чем смысловую.</p>
+
+            <h2>Как НЕЛЬЗЯ использовать логотип</h2>
+            <p>Логотип Нельзя сжимать, растягивать, менять кернинг между знаками. Отдельным случаем является поворот. </p>
+            <p>*Логотип нельзя вращать относительно всей типографики и вне бирки. О которых будет написано ниже.</p>
+            <div class="logo_mist"></div>
+            <p>Логотип не использовать поверх фотографий, градиентов. И нельзя использовать как маску для фото</p>
+            <div class="logo_mist_2"></div>
+        </div>
+      </div>
+        <div class="main m_2">
+
+        <div class="third" id="s4">
+        <h1>Типографика</h1>
+        <p>Шрифт Fugue</p>
+        <p class="abc">Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ ъ ы Ээ Юю Яя</p>
+        <p>На одном носителе не должно быть больше 3х стилей шрифтов.
+        текст всегда располагается по сетке, либо внутри бирки либо вне её</p>
+      </div>
+      <h1 id="s5">Цвет</h1>
+      <div class="color_box">
+        <div class="color_1"></div>
+        <div class="color_2"></div>
+      </div>
+      <p>Дополнительный цвет подбирается под используемую фотографию.</p>
+      <p>Выбранные цвета должны контрастировать с фотом носителя</p>
+      <div class="black">
+        <div class="palitra">  </div>
+      </div>
+      </div>
+
+      <h2>Графика</h2>
+      <p>Основным графическим элементом являются бирки. Все бирки имеют закругление. Бирки могут быть информативными, а могут и не быть. Они могут содержать текст с информацией, фотографии, простые обозначения. Бирки могут иметь разные формы и соотношение сторон.</p>
+      <p>Скругления и углы также могут быть разными, НО углы не равны 90 грудусам./должно чувствоваться скругление</p>
+      <p>Все бирки имеют эффект тени на светлом фоне и свечения на темном фоне.</p>
+
+      <div class="">
+
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
